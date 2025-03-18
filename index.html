@@ -486,52 +486,71 @@
  
 
             <!-- #CLÁSICO JAJA -->
+<style>
+    .grid-list {
+        display: flex;
+        justify-content: center; /* Centra los elementos */
+        gap: 40px; /* Espacio entre ellos */
+        flex-wrap: wrap; /* Para que en móviles se acomoden bien */
+        list-style: none;
+        padding: 0;
+    }
+
+    .event-card {
+        text-align: center;
+    }
+
+    .card-banner {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%; /* Hace el contenedor circular */
+        overflow: hidden; /* Asegura que la imagen siga el círculo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #d4af37; /* Borde dorado (opcional, cámbialo si quieres) */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    }
+
+    .card-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    }
+</style>
+
 <section class="section event bg-black-10" aria-label="event">
     <div class="container">
 
         <p class="section-subtitle label-2 text-center">Nuestros Productos:</p>
 
-        <h2 class="section-title headline-1 text-center"></h2>
-
         <ul class="grid-list">
 
             <li>
                 <div class="event-card has-before hover:shine">
-                    
-                    <!-- Centrar imagen con <center> -->
-                    <center>
-                        <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                            <img src="./assets/images/lanasu.jpeg" width="350" height="450" loading="lazy" 
-                                 alt="Lana de Alpaca Suri" class="img-cover">
-                        </div>
-                    </center>
+                    <div class="card-banner">
+                        <img src="./assets/images/lanasu.jpeg" loading="lazy" alt="Lana de Alpaca Suri">
+                    </div>
 
                     <div class="card-content">
                         <h3 class="card-title title-2 text-center">
                             Lana de Alpaca Suri.
                         </h3>
                     </div>
-
                 </div>
             </li>
 
             <li>
                 <div class="event-card has-before hover:shine">
-
-                    <!-- Centrar imagen con <center> -->
-                    <center>
-                        <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                            <img src="./assets/images/lanahua.jpeg" width="350" height="450" loading="lazy" 
-                                 alt="Lana de Alpaca Huacaya" class="img-cover">
-                        </div>
-                    </center>
+                    <div class="card-banner">
+                        <img src="./assets/images/lanahua.jpeg" loading="lazy" alt="Lana de Alpaca Huacaya">
+                    </div>
 
                     <div class="card-content">
                         <h3 class="card-title title-2 text-center">
                             Lana de Alpaca Huacaya.
                         </h3>
                     </div>
-
                 </div>
             </li>
 
@@ -539,6 +558,7 @@
 
     </div>
 </section>
+
 
 
         </article>
